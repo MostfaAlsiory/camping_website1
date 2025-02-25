@@ -1,0 +1,63 @@
+/* قسم التواصل */
+.contact-section {
+  padding: 40px 20px;
+  background: #ffffff;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: #007acc;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-info i {
+  color: #007acc;
+  font-size: 24px;
+}
+
+.contact-info a {
+  color: #007acc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #005f99;
+}
+
+/* تحسين زر العودة للصفحة الرئيسية */
+.header-buttons .back-button {
+  background-color: #ffdd57;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header-buttons .back-button:hover {
+  background-color: #ffd700;
+}
+.contact-info a.email-link {
+  font-size: 16px;
+}

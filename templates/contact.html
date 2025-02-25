@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا - موقع الخيم والمخيمات</title>
+  <!-- تضمين FontAwesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style_contact.css') }}">
+</head>
+<body class="light-mode">
+
+  <!-- رأس الصفحة -->
+  <header>
+    <h1>موقع الخيم والمخيمات</h1>
+    <div class="header-buttons">
+      <a href="/" class="back-button"><i class="fa fa-home"></i> العودة للصفحة الرئيسية</a>
+    </div>
+  </header>
+
+  <!-- قسم التواصل -->
+  <section class="contact-section">
+    <h2>تواصل معنا</h2>
+    <p>إذا كان لديك أي استفسار أو رغبة في الحصول على مزيد من المعلومات، يرجى التواصل معنا عبر الوسائل التالية:</p>
+    <div class="contact-info">
+      <p><i class="fa fa-phone"></i> <strong>الهاتف:</strong> <a href="tel:+966535818639">+966 535818639</a></p>
+      <p><i class="fa fa-whatsapp"></i> <strong>الواتساب:</strong> <a href="https://wa.me/+966535818639" target="_blank">تواصل عبر واتساب</a></p>
+      <p>
+        <i class="fa fa-envelope"></i> 
+        <strong>البريد الإلكتروني:</strong> 
+        <a class="email-link" href="mailto:alzyzybasheer123@gmail.com">alzyzybasheer123@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- تذييل الصفحة -->
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2025 - موقع الخيم والمخيمات</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

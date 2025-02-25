@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ subcategory.name }} - تفاصيل الفرع</title>
+  <!-- تضمين FontAwesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}">
+</head>
+<body class="light-mode">
+
+  <!-- رأس الصفحة -->
+  <header>
+    <h1>موقع الخيم والمخيمات</h1>
+    <div class="header-buttons">
+      <!-- زر العودة باستخدام history.back() -->
+      <a href="javascript:history.back()" class="back-button"><i class="fa fa-arrow-right"></i> العودة</a>
+    </div>
+  </header>
+
+  <!-- قسم تفاصيل الفرع -->
+  <section class="subcategory-detail">
+    <div class="detail-container">
+      <!-- صورة الفرع مع إمكانية تكبيرها عند الضغط (Lightbox) -->
+      <div class="image-container" onclick="openLightbox('{{ url_for('static', filename='images/' + subcategory.image) }}')">
+        <img src="{{ url_for('static', filename='images/' + subcategory.image) }}" alt="{{ subcategory.name }}">
+      </div>
+      <!-- معلومات الفرع -->
+      <div class="detail-info">
+        <h2>{{ subcategory.name }}</h2>
+        <p>{{ subcategory.details }}</p>
+        <!-- زر تواصل للاستفسار -->
+        <a href="/contact" class="contact-button"><i class="fa fa-envelope"></i> تواصل معنا للاستفسار</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- نافذة Lightbox لعرض الصورة المكبرة -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="صورة مكبرة">
+  </div>
+
+  <!-- تذييل الصفحة -->
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2025 - موقع الخيم والمخيمات</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
