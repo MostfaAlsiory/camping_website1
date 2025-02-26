@@ -2,24 +2,24 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
- <title>ابو مؤيد للمظلات والسواتر والبيوت الشعر</title>
+ <title>丕亘賵 賲丐賷丿 賱賱賲馗賱丕鬲 賵丕賱爻賵丕鬲乇 賵丕賱亘賷賵鬲 丕賱卮毓乇</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-    <!-- رأس الصفحة -->
+    <!-- 乇兀爻 丕賱氐賮丨丞 -->
     <header class="hero-banner">
         <div class="banner-content">
-            <h1>مرحبًا بكم في موقع الخيم والمخيمات</h1>
-            <p>نوفر أفضل أنواع الخيم والمظلات والسواتر بتصاميم فريدة وجودة عالية.</p>
-            <p>للتواصل: <a href="tel:+966535818639">+966 535818639</a></p>
-            <button onclick="toggleTheme()" class="theme-button">🌓 تبديل الوضع</button>
+            <h1>賲乇丨亘賸丕 亘賰賲 賮賷 賲賵賯毓 丕賱禺賷賲 賵丕賱賲禺賷賲丕鬲</h1>
+            <p>賳賵賮乇 兀賮囟賱 兀賳賵丕毓 丕賱禺賷賲 賵丕賱賲馗賱丕鬲 賵丕賱爻賵丕鬲乇 亘鬲氐丕賲賷賲 賮乇賷丿丞 賵噩賵丿丞 毓丕賱賷丞.</p>
+            <p>賱賱鬲賵丕氐賱: <a href="tel:+966535818639">+966 535818639</a></p>
+            <button onclick="toggleTheme()" class="theme-button">馃寭 鬲亘丿賷賱 丕賱賵囟毓</button>
         </div>
     </header>
 
-    <!-- الأقسام الرئيسية -->
+    <!-- 丕賱兀賯爻丕賲 丕賱乇卅賷爻賷丞 -->
     <section class="categories">
         {% for id, category in categories.items() %}
         <div class="category-card">
@@ -28,23 +28,23 @@
             </div>
             <h3>{{ category.name }}</h3>
             <p>{{ category.description }}</p>
-            <a href="/category/{{ id }}" class="view-button">🔍 عرض التفاصيل</a>
+            <a href="/category/{{ id }}" class="view-button">馃攳 毓乇囟 丕賱鬲賮丕氐賷賱</a>
         </div>
         {% endfor %}
     </section>
 
-    <!-- زر التواصل العائم -->
-    <a href="/contact" target="_blank" class="floating-button">💬 تواصل معنا</a>
+    <!-- 夭乇 丕賱鬲賵丕氐賱 丕賱毓丕卅賲 -->
+    <a href="/contact" target="_blank" class="floating-button">馃挰 鬲賵丕氐賱 賲毓賳丕</a>
 
-    <!-- تذييل الصفحة -->
+    <!-- 鬲匕賷賷賱 丕賱氐賮丨丞 -->
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2025 - 
-       ابو مؤيد</p>
+        <p>噩賲賷毓 丕賱丨賯賵賯 賲丨賮賵馗丞 &copy; 2025 - 
+       丕亘賵 賲丐賷丿</p>
     </footer>
 
-    <!-- نافذة عرض الصور المنبثقة (Lightbox) -->
+    <!-- 賳丕賮匕丞 毓乇囟 丕賱氐賵乇 丕賱賲賳亘孬賯丞 (Lightbox) -->
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="" alt="صورة مكبرة">
+        <img id="lightbox-img" src="" alt="氐賵乇丞 賲賰亘乇丞">
     </div>
 
 </body>
